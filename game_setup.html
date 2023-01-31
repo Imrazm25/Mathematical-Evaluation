@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evaluating an expression</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h4 id="player1_name"></h4> <span id="player1_score"></span>
+<br>
+<h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+<div class="container">
+	<center>
+		<h2 style="color: rgb(203, 217, 16);font-size: 60px;">Evaluate the Expression!</h2>
+		<b style="color:red; font-size: 20px;">NOTE: The player who scores 5 points first will be the winner of this game. Incorrect answers will deduct your points. So think and answer.</b>
+		<h3 id="player_question" style="color: rgb(203, 217, 16);font-size: 30px;" ></h3>
+		<h3 id="player_answer" style="color: rgb(203, 217, 16);font-size: 30px;"></h3>
+		<div id="output" class="col-lg-6"> </div>
+		<br>
+		<br>
+		<b style="color: rgb(255, 251, 0)">Type a mathematical expression that includes basic operations
+		</b>
+		</label>
+		<input type="text" id="expression" class="form-control" placeholder="Expression">
+		<br>
+		<button onclick="send()" id="send" class="btn btn-warning" style="width: 30%; font-size:20px; font-weight:bold; color:black">Send</button>
+		<h3 id="display_result" style="color: rgb(203, 217, 16);font-size: 35px;"></h3>
+		<h3 id="display_winner" style="color: rgb(203, 217, 16);font-size: 100px;font-weight:bold;"></h3>
+		<button onclick="restart()" id="restart" class="btn btn-success" style="width: 30%; font-size: 25px; display: none;">Restart</button>
+	</center>
+</div>
+
+<script src="game_setup.js"></script>
+</body>
+</html>
